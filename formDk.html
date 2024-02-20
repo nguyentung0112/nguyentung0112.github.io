@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 5px 5px gray;
+        }
+
+        .form-control{
+            width: 94%;
+        }
+
+        .form-control:focus{
+            background-color: aqua;
+        }
+
+        .btn{
+            width: 100px;
+            height: 40px;
+            background-color: red;
+            color: beige;
+            box-shadow: inset 0 0 10px gray;
+        }
+
+        .btn:hover{
+            background-color: white;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Form liên hệ</h1>
+    <form class="form" action="" method="post">
+
+        Họ vè tên: <br>
+        <input class="form-control" type="text" name="" id=""> <br>
+
+        Giới tính: 
+        <label for="">
+            <input type="radio" name="gender" id=""> Nam
+            <input type="radio" name="gender" id=""> Nữ
+        </label> <br>
+
+        Quốc tịch: <br>
+        <select name="list" id="list">
+            <option value="Việt Nam">Việt Nam</option>
+            <option value="China">China</option>
+            <option value="ThaiLand">Thái Lan</option>
+            <option value="Campuchia">Campuchia</option>
+        </select> <br>
+
+        Sở thích: <br>
+        <label for="">
+            <input type="checkbox" name="" id=""> Thể thao
+        </label>
+        <label for="">
+            <input type="checkbox" name="" id=""> Đọc sách
+        </label>
+        <label for="">
+            <input type="checkbox" name="" id=""> Du lịch
+        </label> <br>
+        
+        Ghi chú: <br>
+        <textarea class="form-control" name="" id="" cols="50" rows="10"></textarea> <br>
+        <hr>
+        <input class="btn" type="submit" value="submit">
+        <input class="btn" type="reset" value="reset">
+    </form>
+</body>
+</html>
